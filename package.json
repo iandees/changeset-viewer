@@ -1,0 +1,32 @@
+{
+    "name": "changeset-history-viewer",
+    "version": "0.0.1",
+    "author": "Ian Dees <ian.dees@gmail.com>",
+    "description": "Downloads OSM data from before and after a changeset to allow visualizing the changes.",
+    "scripts": {
+        "test": "tape test/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/iandees/changeset-history-viewer.git"
+    },
+    "bin": {
+        "changeset-history-viewer": "cli.js"
+    },
+    "main": "index.js",
+    "license": "BSD",
+    "engines": {
+        "node": ">=0.8"
+    },
+    "dependencies": {
+        "moment": "2.6.0",
+        "queue-async": "1.0.7",
+        "request": "^2.34.0",
+        "xmldom": "^0.1.16"
+    },
+    "devDependencies": {
+        "glob": "~3.2.9",
+        "tape": "~2.10.2",
+        "tap": "~0.4.8"
+    }
+}
